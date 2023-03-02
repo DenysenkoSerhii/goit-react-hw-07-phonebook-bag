@@ -6,7 +6,7 @@ const MyContactList = ({ removeContact, contacts }) => {
 
     const contactList = contacts.map(({ id, name, number }) => <li className={styles.formContact} key={id}>{name}. : {number}.
         <button onClick={() => removeContact(id)} type="button">Delete</button></li>);
-    console.log(contacts);
+
     return (
         <ol>
             {contactList}
